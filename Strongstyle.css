@@ -9,6 +9,10 @@ header{
     flex-direction:row;
     flex-wrap:nowrap;
     background-color:white;
+    border-radius: 15px;
+}
+body{
+    background-color: rgb(242, 244, 252);
 }
 .navbar{
     font-family:FiraSans;
@@ -19,6 +23,7 @@ header{
     border-radius:10px;
     text-align: center;
     margin-top:10px;
+    margin-bottom:10px;
 }
 .navbar:nth-child(2){
     color:rgb(4, 4, 156);
@@ -47,6 +52,7 @@ header{
     background-color: rgb(4, 4, 156);
     color:white;
     padding-top:10px;
+    margin-right:5px;
 }
 .navbar:nth-child(9){
     background-color: rgb(4, 4, 156);
@@ -66,18 +72,57 @@ header{
 .ads:nth-child(1){
     width:820px;
     height:600px;
-    background-image:url('https://cdn0.divan.ru/img/v1/AMyCenC1AuXhCV_HDpzQVhDVkl6PKJQbc7I38t3RxeQ/rs:fit:1920:1440:0:0/g:ce:0:0/bg:ffffff/q:85/czM6Ly9kaXZhbi93aWtpLWFydGljbGUvNDIzOTc3Mi5qcGVn.jpg');
+    background-image:url('https://ceramica-sp.ru/wp-content/uploads/5/b/9/5b9e9de6abcdd6518acc70a9f6f70da0.jpeg');
+}
+.ads:nth-child(2){
+    width:430px;
+    height:600px;
+    background-image:url('https://dobrieceni.ru/upload/resize_cache/iblock/6a5/600_600_140cd750bba9870f18aada2478b24840a/u665857ylcm1gbpfkicdmkcb0k5wabu5.jpg');
+    margin-left:10px;
 }
 .adText:nth-child(1){
     font-size:50px;
     color:white;
+    margin:1rem;
 }
-.adKat{
-    color:black;
-    width:200px;
-    height:200px;
-    background-color: white;
+.adText h1{
+    margin-top:250px;
+    font-size:50px;
+}
+.adText h6{
     font-size:20px;
+}
+.adCat{
+    color:rgb(0, 0, 70);
+    background-color: white;
+    border-color: white;
     border-radius:15px;
-    margin:5px;
+    font-size:20px;
+    width:100px; 
+    height:60px; 
+    margin:1rem; 
+}
+.advantages{
+    text-align: center;
+}
+.plusesName{
+    font-family:FiraSans; 
+    color:rgb(1, 1, 116) ;
+}
+.pluses{
+    margin-left: 17%;
+    margin-right:17%;
+    font-family:FiraSans;  
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    color:rgb(0, 0, 70);
+}
+.plusesbar{
+    background-color: white;
+    border-radius: 10px;
+    width:200px;
+    height:100px;   
+    padding:10px;
 }
