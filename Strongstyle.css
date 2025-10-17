@@ -1,20 +1,83 @@
+@font-face {
+    font-family: FiraSans;
+    src: url('../../fonts/FiraSans-Medium.ttf');
+}
 header{
     margin-left:17%;
+    margin-right:17%;
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
-    margin-right:17%;
+    background-color:white;
 }
 .navbar{
+    font-family:FiraSans;
+    color:rgb(0, 0, 70);
     flex-grow:1;
     background-color: white;
     border-color:white;
-    border-radius:25px;
+    border-radius:10px;
+    text-align: center;
+    margin-top:10px;
+}
+.navbar:nth-child(2){
+    color:rgb(4, 4, 156);
+    padding-top:10px;
+    padding-right:2px;
+    border-width: 2px;
+    border-style:solid;
+    border-color:rgb(4, 4, 156);
+}
+.navbar:nth-child(3){
+    padding-top:10px;
+}
+.navbar:nth-child(4){
+    padding-top:10px;
+}
+.navbar:nth-child(5){
+    padding-top:10px;
+}
+.navbar:nth-child(6){
+    padding-top:10px;
+}
+.navbar:nth-child(7){
+    padding-top:5px;
 }
 .navbar:nth-child(8){
     background-color: rgb(4, 4, 156);
     color:white;
+    padding-top:10px;
 }
 .navbar:nth-child(9){
     background-color: rgb(4, 4, 156);
+    padding-top:10px;
+}
+.ad{
+    font-family:FiraSans;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+.ads{
+    margin-top:30px;
+    margin-left:17%;
+    border-radius:25px;
+}
+.ads:nth-child(1){
+    width:820px;
+    height:600px;
+    background-image:url('https://cdn0.divan.ru/img/v1/AMyCenC1AuXhCV_HDpzQVhDVkl6PKJQbc7I38t3RxeQ/rs:fit:1920:1440:0:0/g:ce:0:0/bg:ffffff/q:85/czM6Ly9kaXZhbi93aWtpLWFydGljbGUvNDIzOTc3Mi5qcGVn.jpg');
+}
+.adText:nth-child(1){
+    font-size:50px;
+    color:white;
+}
+.adKat{
+    color:black;
+    width:200px;
+    height:200px;
+    background-color: white;
+    font-size:20px;
+    border-radius:15px;
+    margin:5px;
 }
