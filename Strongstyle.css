@@ -3,13 +3,15 @@
     src: url('../../fonts/FiraSans-Medium.ttf');
 }
 header{
-    margin-left:17%;
-    margin-right:17%;
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
     background-color:white;
     border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+    width: 70%;
 }
 body{
     background-color: rgb(242, 244, 252);
@@ -22,51 +24,37 @@ body{
     border-color:white;
     border-radius:10px;
     text-align: center;
-    margin-top:10px;
-    margin-bottom:10px;
+    justify-content: center;
+    align-items: center;
+    padding-top:10px;
+    padding-bottom:5px;
+    height:30px;
 }
 .navbar:nth-child(2){
     color:rgb(4, 4, 156);
-    padding-top:10px;
     padding-right:2px;
     border-width: 2px;
     border-style:solid;
     border-color:rgb(4, 4, 156);
 }
-.navbar:nth-child(3){
-    padding-top:10px;
-}
-.navbar:nth-child(4){
-    padding-top:10px;
-}
-.navbar:nth-child(5){
-    padding-top:10px;
-}
-.navbar:nth-child(6){
-    padding-top:10px;
-}
-.navbar:nth-child(7){
-    padding-top:5px;
-}
 .navbar:nth-child(8){
     background-color: rgb(4, 4, 156);
     color:white;
-    padding-top:10px;
     margin-right:5px;
 }
 .navbar:nth-child(9){
     background-color: rgb(4, 4, 156);
-    padding-top:10px;
 }
 .ad{
     font-family:FiraSans;
     display:flex;
     flex-direction: row;
     flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .ads{
     margin-top:30px;
-    margin-left:17%;
     border-radius:25px;
 }
 .ads:nth-child(1){
@@ -122,7 +110,45 @@ body{
 .plusesbar{
     background-color: white;
     border-radius: 10px;
-    width:200px;
-    height:100px;   
+    width:20%;
+    height:50px;   
     padding:10px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+.plImg{
+    justify-content: left;
+}
+.plT{
+    padding-top:5px;
+    justify-content: center;
+    align-items: center;
+}
+.lowbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
+    background-color: white;
+    width:20%;
+    border-radius:10px;
+}
+.lowT{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
+}
+.lowImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
 }
