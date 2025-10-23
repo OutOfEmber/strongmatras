@@ -10,11 +10,15 @@ header{
     border-radius: 15px;
     justify-content: center;
     align-items: center;
-    margin-left: 15%;
     width: 70%;
 }
 body{
     background-color: rgb(242, 244, 252);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .navbar{
     font-family:FiraSans;
@@ -25,10 +29,12 @@ body{
     border-radius:10px;
     text-align: center;
     justify-content: center;
-    align-items: center;
-    padding-top:10px;
-    padding-bottom:5px;
-    height:30px;
+    align-items: center;    
+    height:40px;
+    padding-top: 20px;
+}
+.navbar:nth-child(1){
+    padding-top:0px;
 }
 .navbar:nth-child(2){
     color:rgb(4, 4, 156);
@@ -91,26 +97,29 @@ body{
     margin:1rem; 
 }
 .advantages{
+    width: 60%;
     text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .plusesName{
     font-family:FiraSans; 
     color:rgb(1, 1, 116) ;
 }
 .pluses{
-    margin-left: 17%;
-    margin-right:17%;
     font-family:FiraSans;  
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    align-items: center;
     color:rgb(0, 0, 70);
 }
 .plusesbar{
     background-color: white;
     border-radius: 10px;
-    width:20%;
+    margin: 5px;
+    width:30%;
     height:50px;   
     padding:10px;
     display: flex;
@@ -125,30 +134,73 @@ body{
     justify-content: center;
     align-items: center;
 }
-.lowbar{
-    display: flex;
+.catalog{
+    display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    flex-grow:1;
-    background-color: white;
+    width:80%;
+    height: 30%;
+    font-family: FiraSans;
+    color:white;
+}
+.elT{
+    margin-top:200px;
+    font-size:20px;
+}
+.el{
+    width: 16%;
+    height: 100%;
+    border-radius: 15px;
+    margin:15px;
+}
+.el:nth-child(1){
+    background-image:url("matrasi.png") ;
+}
+.el:nth-child(2){
+    background-image: url("krovati.png");
+}
+.el:nth-child(3){
+    background-image: url("mebel.png");
+}
+.el:nth-child(4){
+    background-image: url("podushki.png");
+}
+.bestseller{
+    font-family: FiraSans;
+    color:rgb(0, 0, 70);
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.bestT{
+    font-family: FiraSans;
+    color:rgb(0, 0, 70);
+}
+.container{
+    display: flex;
+    flex-direction: column;
     width:20%;
-    border-radius:10px;
+    height: 570px;
+    margin:10px;
+    border-radius: 20px;
+    background-color: white;
 }
-.lowT{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    flex-grow:1;
+.cImg{
+    border-radius: 20px 20px 0px 0px;
 }
-.lowImg{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    flex-grow:1;
+.cT ul{
+    padding: 10px;
+}
+.more{
+    padding: 10px;
+    color:rgb(4, 4, 156);
+    padding-right:2px;
+    border-width: 2px;
+    border-style:solid;
+    border-color:rgb(4, 4, 156);
+    border-radius: 15px;
 }
