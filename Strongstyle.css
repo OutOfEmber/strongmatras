@@ -58,18 +58,19 @@ body{
     flex-wrap:nowrap;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 .ads{
     margin-top:30px;
     border-radius:25px;
 }
 .ads:nth-child(1){
-    width:820px;
+    width:50%;
     height:600px;
     background-image:url('https://ceramica-sp.ru/wp-content/uploads/5/b/9/5b9e9de6abcdd6518acc70a9f6f70da0.jpeg');
 }
 .ads:nth-child(2){
-    width:430px;
+    width:40%;
     height:600px;
     background-image:url('https://dobrieceni.ru/upload/resize_cache/iblock/6a5/600_600_140cd750bba9870f18aada2478b24840a/u665857ylcm1gbpfkicdmkcb0k5wabu5.jpg');
     margin-left:10px;
@@ -135,6 +136,7 @@ body{
     align-items: center;
 }
 .catalog{
+    margin-top:20px;
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -195,7 +197,16 @@ body{
 .cT ul{
     padding: 10px;
 }
+.fT{
+    font-size: small;
+    color:gray;
+    margin:20px;
+}
+.hT{
+    margin:20px;
+}
 .more{
+    margin:20px;
     padding: 10px;
     color:rgb(4, 4, 156);
     padding-right:2px;
@@ -203,4 +214,64 @@ body{
     border-style:solid;
     border-color:rgb(4, 4, 156);
     border-radius: 15px;
+}
+.cost{
+    font-size: 20px;
+    color:black;
+    margin: 20px;
+}
+.gridless{
+    border-radius: 15px;
+    background-color: white;
+    font-family: FiraSans;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.grls{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin:10px;
+}
+.grls a{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin:10px;
+}
+.grls img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin:10px;
+}
+.fFT{
+    color:gray;
+}
+.number{
+    color:rgb(15, 3, 122);
+    margin-right: 0px;
+}
+.blueT:nth-child(2){
+    background-color: rgb(10, 10, 116);
+    color:white;
+    border-radius: 10px;
+    padding:20px;
+    width:100%;
+}
+.blueT:nth-child(3){
+    border: solid;
+    border-radius: 10px;
+    border-color: blue;
+    padding:20px;   
+    width:100%;
+}
+.socials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
