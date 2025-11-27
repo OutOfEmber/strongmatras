@@ -158,16 +158,16 @@ body{
     margin:15px;
 }
 .el:nth-child(1){
-    background-image:url("matrasi.png") ;
+    background-image:url("images/matrasi.png") ;
 }
 .el:nth-child(2){
-    background-image: url("krovati.png");
+    background-image: url("images/krovati.png");
 }
 .el:nth-child(3){
-    background-image: url("mebel.png");
+    background-image: url("images/mebel.png");
 }
 .el:nth-child(4){
-    background-image: url("podushki.png");
+    background-image: url("images/podushki.png");
 }
 .bestseller{
     font-family: FiraSans;
