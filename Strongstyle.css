@@ -2,6 +2,12 @@
     font-family: FiraSans;
     src: url('../../fonts/FiraSans-Medium.ttf');
 }
+*{
+    scroll-behavior: smooth;
+}
+#catalog:target{
+    animation: white 1s;
+}
 header{
     display:flex;
     flex-direction:row;
@@ -261,17 +267,25 @@ body{
     color:white;
     border-radius: 10px;
     padding:20px;
-    width:100%;
+    width:50%;
 }
 .blueT:nth-child(3){
     border: solid;
     border-radius: 10px;
     border-color: blue;
     padding:20px;   
-    width:100%;
+    width:50%;
 }
 .socials{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+}
+@keyframes white {
+    0%{}
+    50%{
+        background-color: white;
+        border-radius: 25px;
+    }
+    100%{}
 }
