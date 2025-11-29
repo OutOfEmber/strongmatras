@@ -5,8 +5,20 @@
 *{
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+}
 #catalog:target{
-    animation: white 1s;
+    animation: white1 1s;
+}
+#company:target{
+    animation: blue1 1s;
+}
+#buyers:target{
+    animation: blue1 2s;
+}
+#feedback:target{
+    animation: blue1 2s;
 }
 header{
     display:flex;
@@ -70,6 +82,10 @@ body{
     margin-top:30px;
     border-radius:25px;
 }
+.ads:nth-child(2) .adText h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
 .ads:nth-child(1){
     width:50%;
     height:600px;
@@ -79,6 +95,9 @@ body{
     width:40%;
     height:600px;
     background-image:url('https://dobrieceni.ru/upload/resize_cache/iblock/6a5/600_600_140cd750bba9870f18aada2478b24840a/u665857ylcm1gbpfkicdmkcb0k5wabu5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-left:10px;
 }
 .adText:nth-child(1){
@@ -132,12 +151,15 @@ body{
     display: flex;
     flex-direction:row;
     flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .plImg{
     justify-content: left;
 }
 .plT{
     padding-top:5px;
+    margin-left:5%;
     justify-content: center;
     align-items: center;
 }
@@ -158,6 +180,7 @@ body{
     font-size:20px;
 }
 .el{
+    color:white;
     width: 16%;
     height: 100%;
     border-radius: 15px;
@@ -192,16 +215,26 @@ body{
     display: flex;
     flex-direction: column;
     width:20%;
-    height: 570px;
     margin:10px;
     border-radius: 20px;
     background-color: white;
+    min-height: 570px;
 }
 .cImg{
     border-radius: 20px 20px 0px 0px;
 }
+.cT{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0 20px;
+    height: 100%;
+}
+
 .cT ul{
+    margin-left: 10px;
     padding: 10px;
+    flex-grow: 1;
 }
 .fT{
     font-size: small;
@@ -213,13 +246,15 @@ body{
 }
 .more{
     margin:20px;
+    margin-top: auto;
     padding: 10px;
     color:rgb(4, 4, 156);
-    padding-right:2px;
     border-width: 2px;
     border-style:solid;
     border-color:rgb(4, 4, 156);
     border-radius: 15px;
+    text-align: center;
+    display: block;
 }
 .cost{
     font-size: 20px;
@@ -234,26 +269,32 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 80%;
+    padding: 20px 0;
 }
 .grls{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     margin:10px;
+    height: 100%;
 }
 .grls a{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin:10px;
+    margin: 5px 10px;
 }
-.grls img{
+.grls a.fFT {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.grls a img{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin:10px;
+    border-radius: 10px;
 }
 .fFT{
     color:gray;
@@ -263,28 +304,249 @@ body{
     margin-right: 0px;
 }
 .blueT:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(10, 10, 116);
     color:white;
     border-radius: 10px;
     padding:20px;
-    width:50%;
+    width:70%;
+    height: 10px;
 }
 .blueT:nth-child(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid;
     border-radius: 10px;
     border-color: blue;
     padding:20px;   
-    width:50%;
+    width:70%;
+    height: 10px;
 }
 .socials{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-@keyframes white {
+.cart{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+
+}
+.cart:hover {
+    background-color: rgb(2, 2, 100);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+.more:hover {
+    background-color: rgb(2, 2, 100);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+/* Стили для каталога */
+.products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.product-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.buy-button {
+    background: rgb(4, 4, 156);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+.flex-catalog{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+/* Стили для корзины */
+.cart-content {
+    padding: 20px;
+    text-align: center;
+}
+.suggestions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+.suggestion-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+.continue-shopping {
+    background: rgb(4, 4, 156);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+/* Стили для формы доставки */
+.delivery-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.form-group {
+    margin: 15px 0;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.submit-order {
+    background: rgb(4, 4, 156);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Стили для страницы гарантии */
+.warranty-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.warranty-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+}
+.submit-request {
+    background: rgb(4, 4, 156);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.warranty-info {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.warranty-info ul {
+    margin-left: 20px;
+}
+.warranty-info li {
+    margin: 10px 0;
+}
+/* Стили для формы обратного звонка */
+.callback-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.callback-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+/* Стили для страницы магазинов */
+.shops-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.shop-card {
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px 0;
+    border-left: 4px solid rgb(4, 4, 156);
+}
+.shop-address {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.shop-hours, .shop-phone {
+    margin: 5px 0;
+    color: #666;
+}
+.shop-rating {
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(4, 4, 156);
+}
+@keyframes white1 {
     0%{}
     50%{
         background-color: white;
+        border-radius: 25px;
+    }
+    100%{}
+}
+@keyframes blue1 {
+    0%{}
+    50%{
+        background-color: rgb(2, 2, 100);
         border-radius: 25px;
     }
     100%{}

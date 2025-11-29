@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Обратный звонок | Strong</title>
+    <link rel="stylesheet" href="/../Strongstyle.css">
+</head>
+<body>
+    <header>
+        <a href="/../strong.html" class="navbar"><img src="/../images/strong.png"></a>
+        <a href="catalog.html" class="navbar">Каталог</a>
+        <a href="cart.html" class="navbar">Корзина</a>
+    </header>
+    <div class="callback-content">
+        <h1>Заказать обратный звонок</h1>
+        <p>Мы перезвоним вам в течение 15 минут в рабочее время</p>
+        
+        <form class="callback-form">
+            <div class="form-group">
+                <label>Ваше имя:</label>
+                <input type="text" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Телефон:</label>
+                <input type="tel" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Удобное время для звонка:</label>
+                <select>
+                    <option>В ближайшее время</option>
+                    <option>10:00 - 12:00</option>
+                    <option>12:00 - 14:00</option>
+                    <option>14:00 - 16:00</option>
+                    <option>16:00 - 18:00</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Тема обращения:</label>
+                <input type="text" placeholder="Например: консультация по матрасам">
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="callback-agree" required>
+                <label for="callback-agree">Я согласен на обработку персональных данных</label>
+            </div>
+            
+            <button type="submit" class="submit-request">Заказать звонок</button>
+        </form>
+    </div>
+</body>
+</html>

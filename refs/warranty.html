@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Гарантия и возврат | Strong</title>
+    <link rel="stylesheet" href="/../Strongstyle.css">
+</head>
+<body>
+    <header>
+        <a href="/../strong.html" class="navbar"><img src="/../images/strong.png"></a>
+        <a href="catalog.html" class="navbar">Каталог</a>
+        <a href="cart.html" class="navbar">Корзина</a>
+    </header>
+    
+    <div class="warranty-content">
+        <h1>Гарантия и возврат</h1>
+        <p>Мы предоставляем гарантию до 20 лет на всю продукцию. Если у вас возникли проблемы с товаром, заполните форму ниже:</p>
+        
+        <form class="warranty-form">
+            <div class="form-group">
+                <label>ФИО:</label>
+                <input type="text" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Телефон:</label>
+                <input type="tel" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Номер заказа:</label>
+                <input type="text" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Дата покупки:</label>
+                <input type="date" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Тип обращения:</label>
+                <select required>
+                    <option value="">Выберите тип</option>
+                    <option>Гарантийный ремонт</option>
+                    <option>Возврат товара</option>
+                    <option>Обмен товара</option>
+                    <option>Консультация по гарантии</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Описание проблемы:</label>
+                <textarea rows="5" required placeholder="Опишите подробно возникшую проблему..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label>Прикрепить фото/документы:</label>
+                <input type="file" multiple>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">Я согласен с условиями гарантийного обслуживания</label>
+            </div>
+            
+            <button type="submit" class="submit-request">Отправить заявку</button>
+        </form>
+        
+        <div class="warranty-info">
+            <h2>Условия гарантии</h2>
+            <ul>
+                <li>Гарантия на матрасы - от 5 до 20 лет в зависимости от модели</li>
+                <li>Бесплатный ремонт в течение гарантийного срока</li>
+                <li>Возврат товара в течение 14 дней с момента покупки</li>
+                <li>Обмен товара в течение 100 дней</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

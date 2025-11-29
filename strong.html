@@ -4,23 +4,24 @@
             <title>Интернет-магазин ортопедических матрасов и кроватей в Москве | Strong</title>
         <link rel="stylesheet" href="Strongstyle.css">
    </head>
-   <header>
+   <header id="head">
          <a class="navbar"><img src="images/strong.png"></a>   
          <a href="#catalog" class="navbar">Каталог <img src="images/catalog.png"></a>
-         <a class="navbar">Компания</a>
-         <a class="navbar">Покупателям</a>
-         <a class="navbar">Магазины</a>
-         <a class="navbar">Ваш город:</a>
-         <a class="navbar"><img src="images/search.png"></a>
-         <a class="navbar">Обратный звонок</a>
-         <a class="navbar"><img src="images/whatsapp.png"></a>
-        </header>
+         <a href="#company" class="navbar">Компания</a>
+         <a href="#buyers" class="navbar">Покупателям</a>
+         <a href="refs/shops.html" class="navbar">Магазины</a>
+         <a class="navbar">Ваш город:<div class="blueMoscow">Москва</div></a>
+         <a href="refs/catalog.html" class="navbar"><img src="images/search.png"></a>
+         <a href="refs/feedback.html" class="navbar" id="feedback">Обратный звонок</a>
+         <a href="https://api.whatsapp.com/send/?phone=79892327798&text=%D0%9E%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE+%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D1%8C%D1%82%D0%B5+%D1%8D%D1%82%D0%BE+%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%2C+%D0%B8+%D0%B4%D0%BE%D0%B6%D0%B4%D0%B8%D1%82%D0%B5%D1%81%D1%8C+%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%B0.+%D0%92%D0%B0%D1%88+%D0%BD%D0%BE%D0%BC%D0%B5%D1%80%3A+3712133&type=phone_number&app_absent=0"class="navbar"><img src="images/whatsapp.png"></a>
+    </header>
     <body>  
+        <div class="cart"><img src="images/cart.png"></div>
         <div class="ad">
         <div class="ads"><div class="adText">
             <h1>Матрасы<br>для всей семьи</h1>
-            <h6>Высыпайтесь с удовольствием!</h2>
-                <button class="adCat">Каталог</button>
+            <h6>Высыпайтесь с удовольствием!</h6>
+            <a href="#catalog"><button class="adCat">Каталог</button></a>
         </div></div>
         <div class="ads"><div class="adText">
             Кровать Design<br>
@@ -42,93 +43,90 @@
         </div>
         </div>
         <div class="catalog" id="catalog">
-            <div class="el"><div class="elT">Матрасы</div></div>
-            <div class="el"><div class="elT">Кровати</div></div>
-            <div class="el"><div class="elT">Мебель</div></div>
-            <div class="el"><div class="elT">Подушки</div></div>
+            <a href="refs/catalog.html" class="el"><div class="elT">Матрасы</div></a>
+            <a href="refs/catalog.html" class="el"><div class="elT">Кровати</div></a>
+            <a href="refs/catalog.html" class="el"><div class="elT">Мебель</div></a>
+            <a href="refs/catalog.html" class="el"><div class="elT">Подушки</div></a>
         </div>
         <div class="bestT"><h1>Хиты продаж</h1></div>
         <div class="bestseller">
             <div class="container">
                 <img class="cImg" src="images/turin.png">
-                <div clas="cT">
-                    <a class="fT">Матрас</a><br>
+                <div class="cT">
+                    <a class="fT">Матрас</a>
                     <a class="hT">Матрас Turin</a>
                     <ul>
                         <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
+                        <li>В составе пена с охлаждающим эффектом</li>
+                        <li>Комфортная беспружинная конструкция</li>
+                        <li>Гарантия на матрас - 5 лет</li>
                     </ul>
-                    <a class="cost">33 345 ₽</a><br><br><br>
-                    <a class="more">Подробнее</a>
+                    <a class="cost">33 896 ₽</a>
+                    <a href="refs/catalog.html" class="more">Подробнее</a>
                 </div>
             </div>
             <div class="container">
                 <img class="cImg" src="images/touch.png">
-                <div clas="cT">
-                    <a class="fT">Матрас</a><br>
+                <div class="cT">
+                    <a class="fT">Матрас</a>
                     <a class="hT">Матрас Touch</a>
                     <ul>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
+                        <li>Инновационная ткань Biotune</li>
+                        <li>Уникальная стежка с пеной Memory Massage Foam помогает полностью расслабиться мышцам</li>
+                        <li>Точечнаяя поддержка тела благодаря пружинной система 4D</li>
+                        <li>Гарантия на матрас - 10 лет</li>
                     </ul>
-                    <a class="cost">33 345 ₽</a><br><br><br>
-                    <a class="more">Подробнее</a>
+                    <a class="cost">25 936 ₽</a>
+                    <a href="refs/catalog.html" class="more">Подробнее</a>
                 </div>
             </div>
             <div class="container">
                 <img class="cImg" src="images/smartjoy.png">
-                <div clas="cT">
-                    <a class="fT">Матрас</a><br>
+                <div class="cT">
+                    <a class="fT">Матрас</a>
                     <a class="hT">Матрас SmartJoy</a>
                     <ul>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
-                        <li>Чехол из специальной ткани Premium с антибактериальной пропиткой</li>
+                        <li>Гипоаллергенный матрас с микромассанжным эффектом</li>
+                        <li>Умная пружинная система по принципу пчелиных сот</li>
+                        <li>Тест-драйв 100 дней</li>
+                        <li>Гарантия на матрас - 15 лет</li>
                     </ul>
-                    <a class="cost">33 345 ₽</a><br><br><br>
-                    <a class="more">Подробнее</a>
+                    <a class="cost">33 345 ₽</a>
+                    <a href="refs/catalog.html" class="more">Подробнее</a>
                 </div>
             </div>
         </div>
-        <div class="gridless">
-            <div class="grls"><img src="images/strong.png"></div>
-            <div class="grls">
+        <div class="gridless" id="company">
+            <div class="grls"><a href="#head"><img src="images/strong.png"></a></div>
+            <div class="grls" id="buyers">
                 <a class="fFT">Покупателям</a>
-                <a>Доставка и оплата</a>
-                <a>Советы покупателю</a>
-                <a>Бонусная программа</a>
-                <a>Матрасы на заказ</a>
-                <a>Кровати на заказ</a>
-                <a>Гарантия и возврат</a>
+                <a href="refs/delivery.html">Доставка и оплата</a>
+                <a href="refs/warranty.html">Гарантия и возврат</a>
             </div>
             <div class="grls">
-                <a class="fFT">Покупателям</a>
-                <a>Доставка и оплата</a>
-                <a>Советы покупателю</a>
-                <a>Бонусная программа</a>
-                <a>Матрасы на заказ</a>
-                <a>Кровати на заказ</a>
-                <a>Гарантия и возврат</a>
+                <a class="fFT">Партнерам</a>
+                <a href="refs/catalog.html">Матрасы оптом</a>
             </div>
             <div class="grls">
-                <a class="fFT">Покупателям</a>
-                <a>Доставка и оплата</a>
-                <a>Советы покупателю</a>
-                <a>Бонусная программа</a>
-                <a>Матрасы на заказ</a>
-                <a>Кровати на заказ</a>
-                <a>Гарантия и возврат</a>
+                <a class="fFT">Популярное</a>
+                <a href="refs/catalog.html">Детские матрасы</a>
+                <a href="refs/catalog.html">Односпальные матрасы</a>
+                <a href="refs/catalog.html">Двуспальные матрасы</a>
+                <a href="refs/catalog.html">Мягкие матрасы</a>
+                <a href="refs/catalog.html">Жетские матрасы</a>
+                <a href="refs/catalog.html">Безпружинные матрасы</a>
             </div>
             <div class="grls">
                 <a class="number">8(800)555-35-35</a>
-                <a class="blueT">Написать письмо</a>
-                <a class="blueT">Консультация</a>
-                <div class="socials"><img src="images/okru.png"><img src="images/yt.png"><img src="images/tg.png"><img src="images/vk.png"><img src="images/ryt.png"></div>
+                <a href="#feedback" class="blueT">Написать письмо</a>
+                <a href="#feedback" class="blueT">Консультация</a>
+                <div class="socials">
+                    <a href="https://ok.ru/fabrikastrong"><img src="images/okru.png"></a>
+                    <a href="https://vk.com/matras_strong?roistat_visit=3712133"><img src="images/vk.png"></a>
+                    <a href="https://www.youtube.com/channel/UCef4cU_CJOn36yCFGiQbLSA?roistat_visit=3712133"><img src="images/yt.png"></a>
+                    <a href="https://t.me/fabrikastrong?roistat_visit=3712133"><img src="images/tg.png"></a>
+                    <a href="https://rutube.ru/channel/24197987/?roistat_visit=3712133"><img src="images/ryt.png"></a>
+                </div>
             </div>
         </div>
     </body>
