@@ -15,7 +15,7 @@ a{
     animation: blue1 1s;
 }
 #buyers:target{
-    animation: blue1 2s;
+    animation: blue1 1s;
 }
 #feedback:target{
     animation: blue1 2s;
@@ -376,21 +376,67 @@ body{
     padding: 20px;
     margin: 10px;
     text-align: center;
+    /* Добавляем фиксированную ширину и выравнивание */
+    width: 300px; /* Фиксированная ширина карточки */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Чтобы padding не увеличивал размер */
 }
+
+.product-card img {
+    width: 250px; /* Фиксированная ширина изображения */
+    height: 250px; /* Фиксированная высота изображения */
+    object-fit: contain; /* Сохраняет пропорции изображения */
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    min-height: 40px; /* Чтобы названия занимали одинаковую высоту */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: rgb(4, 4, 156);
+    min-height: 30px; /* Фиксированная высота для цены */
+}
+
 .buy-button {
     background: rgb(4, 4, 156);
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 10px;
     text-decoration: none;
     display: inline-block;
+    margin-top: 10px;
+    width: 150px; /* Фиксированная ширина кнопки */
+    text-align: center;
+    transition: background-color 0.3s ease;
 }
-.flex-catalog{
+
+.buy-button:hover {
+    background-color: rgb(2, 2, 100);
+}
+
+.flex-catalog {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку */
+    align-items: stretch; /* Выравнивание карточек по высоте */
     justify-content: center;
+    gap: 20px; /* Отступ между карточками */
+}
+
+.products h1 {
+    color: rgb(4, 4, 156);
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 /* Стили для корзины */
 .cart-content {
